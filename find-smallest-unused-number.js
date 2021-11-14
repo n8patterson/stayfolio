@@ -23,4 +23,4 @@ const findSmallestUnusedNumber = (ids) => {
 console.log(findSmallestUnusedNumber([0, 1, 2, 4])); // ex) [0,1,2,4] ⇒ 3
 console.log(findSmallestUnusedNumber([0, 1, 2, 3, 4, 5, 6])); // ex) [0,1,2,3,4,5,6] ⇒ 7
 console.log(findSmallestUnusedNumber([0])); // ex) [0] ⇒ 1
-console.log(findSmallestUnusedNumber([2,7,7])); // ex) [2, 7, 7] ⇒ 3
+console.log(findSmallestUnusedNumber([2, 7, 7])); // ex) [2, 7, 7] ⇒ 3

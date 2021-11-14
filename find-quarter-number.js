@@ -10,7 +10,7 @@ const findQuarter = (month) => {
     quarter = 4;
   }
   return quarter;
-}
+};
 
 console.log(findQuarter(3)); //ex) 3 ⇒ 1
 console.log(findQuarter(8)); //ex) 8 ⇒ 3

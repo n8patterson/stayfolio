@@ -1,14 +1,14 @@
+// Fastest way is just to return apple, but...those code shows how to double check.
 const addAndSubtract = (n) => {
-  let numbers = String(n).split('');
-  let sum = 0;
-  let output = Number.MAX_VALUE;
-  while (output > 10) {
+  while (Number(n) >= 10) {
+    let sum = 0;
+    let numbers = String(n).split('');
     for (let number of numbers) {
       sum += Number(number);
     }
-    output = n-sum;
+    n = n - sum;
   }
-  switch (output) {
+  switch (n) {
     case 1:
       return 'kiwi';
     case 2:
@@ -32,7 +32,7 @@ const addAndSubtract = (n) => {
   }
 };
 
-console.log(addAndSubtract('10'));
+console.log(addAndSubtract(11));
 console.log(addAndSubtract(325));
 console.log(addAndSubtract(315));
-console.log(addAndSubtract(306));
+console.log(addAndSubtract(29));
